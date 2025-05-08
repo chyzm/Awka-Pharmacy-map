@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Pharmacies in Awka | Interactive Location Map</title>
-    
-    <!-- Leaflet css -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <!-- Custom css -->
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <!-- Primary Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Interactive map of pharmacies in Awka, Anambra State. Find nearby pharmacies, their contact details, and operating hours.">
+        <meta name="keywords" content="Awka pharmacies, pharmacy locator, Anambra healthcare, find pharmacy near me, Awka medicine stores">
+        
+        <!-- Open Graph / Facebook Meta Tags -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Explore Pharmacies in Awka | Interactive Location Map">
+        <meta property="og:description" content="Find all pharmacies in Awka with our interactive map. Get directions, contact information, and operating hours.">
+        <meta property="og:image" content="https://example.com/pharmacy-map-preview.jpg">
+        
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Explore Pharmacies in Awka | Interactive Location Map">
+        <meta name="twitter:description" content="Interactive map of pharmacies in Awka with detailed information and directions.">
+        
+        <title>Explore Pharmacies in Awka | Interactive Location Map</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="favicon.png">
+        
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+              integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+              crossorigin="anonymous"/>
+        
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- Preload important resources -->
+        <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" as="script">
+        <link rel="preload" href="script.js" as="script">
+    </head>
 <body>
     <div id="preloader">
         <div class="spinner"></div>
